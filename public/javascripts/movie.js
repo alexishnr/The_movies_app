@@ -4,15 +4,17 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHeart from '@fortawesome/fontawesome-free-solid/faHeart';
 
 var card ={
-  width: '300px',
-  marginTop: '60px',
 }
 
 var card1 ={
-  marginRight: '35px',
+  marginRight: '15px',
   height: '588px',
   marginBottom: '20px',
-  overflow: 'scroll'
+  overflow: 'scroll',
+  marginTop: '60px',
+  width: '250px',
+
+
 }
 
 var heart={
@@ -86,7 +88,7 @@ class Movie extends React.Component {
       }
     }
     return(
-      <Col style={isDisplay,card} xs="12" sm="6" md="4" lg="3">
+      <Col style={isDisplay} xs="12" sm="6" md="4" lg="3">
         <Card style={card1}>
           <CardImg top width="100%" src={"https://image.tmdb.org/t/p/w500/"+this.props.poster_path} alt="Card image cap" />
           <CardBody>

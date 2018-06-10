@@ -1,6 +1,6 @@
 var React = require("react");
 var Movie = require("./movie");
-var { Container, Row, Col, Card, Button, Nav, NavItem, NavLink,Popover, PopoverHeader, PopoverBody  } = require('reactstrap');
+var { Container, Row, Col, Card, Button, Nav, NavItem, NavLink,Popover, PopoverHeader, PopoverBody, Text  } = require('reactstrap');
 
 class App extends React.Component {
 
@@ -138,13 +138,10 @@ class App extends React.Component {
                 </NavLink>
               </NavItem>
             </Nav>
-
-
           </Col>
-
-        </Row>
-        <Row>
-
+      </Row>
+        <h1 style={{textAlign: 'center', justifyContent:'center',color: 'white', fontSize: '50px', marginTop:'50px'}}> The Movies App </h1>
+        <Row style={{marginBottom:'70px'}}>
           {cardList}
 
         </Row>
